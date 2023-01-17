@@ -4,26 +4,24 @@
 main(){
 	
 	char a[100];
-	char c ='b';
+	char c;
 	int i;
     int z=0;
 	printf("Enter Value:");
-	scanf("%s",&a);
-	
+    gets(a);
+
 	
 	printf("Enter Frequency Letter:");
-	scanf("%s",&c);
+	scanf("%c",&c);
 	
 
-    for(i=0; a[i]!='\0'; i++){
+    for(i=0;  i<strlen(a); i++){
 	
-	if(c==a[i]){
+	       if(c == a[i]){
 		
-	z++;
+	           z++;
 	}
 	
-		
-	
 }
-    printf("the frequency of %c = %d",c,a);
+	 printf("the frequency of %c = %d",c,z);
 }

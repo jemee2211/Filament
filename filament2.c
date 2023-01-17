@@ -5,21 +5,17 @@ main(){
 	
 	char a[100];
 	char b[100];
-	int z = 0;
+
+	int z;
 	
 	printf("Enter Name:");
 	scanf("%s",&a);
 	
-	printf("%s",strrev(a));
+	strcpy(b,a);
 	
-	strcpy(a,b);
-	printf("%s\n",a);
+	z = strcmp(strrev(b),a);
 	
-    
-	
-	z= strcmp(a,b);
-	
-	if(a==b){
+	if(z == 0){
 		
 		printf("Palindrome Function");
 	}
